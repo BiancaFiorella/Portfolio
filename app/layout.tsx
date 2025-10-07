@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Portfolio | Bianca Fiorella",
-  description: "Hello welcome to my portfolio website!",
+  description: "Hello and welcome to my portfolio!",
 };
 
 export default function RootLayout({
