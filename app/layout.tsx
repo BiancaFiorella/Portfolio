@@ -2,6 +2,9 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Poppins, Titan_One } from "next/font/google";
+import Nav from "./components/nav";
+import Footer from "./components/footer";
+import clsx from "clsx";
 
 const titanSans = Titan_One({
   variable: "--font-titan-one",
@@ -27,10 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${titanSans.variable} ${poppins.variable} antialiased`}
-      >
+      <body className={clsx(titanSans.variable, poppins.variable, "antialiased")}>
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
